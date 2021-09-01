@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+    <title>Function</title>
+    <script>
+        function sum(){
+    var a=Number(document.getElementById("first").value);
+var b=Number(document.getElementById("second").value);
+    var c;
+    c= a + b;
+    document.getElementById("answer1").value= c;
+    }
+function dif(){
+    var a=Number(document.getElementById("first").value);
+var b=Number(document.getElementById("second").value);
+    var d;
+    d= a - b;
+    document.getElementById("answer2").value= d;
+        }
+function div(){
+    var a=Number(document.getElementById("first").value);
+var b=Number(document.getElementById("second").value);
+    var e;
+    e= a / b;
+    document.getElementById("answer3").value= e;
+            }
+function mult(){
+    var a=Number(document.getElementById("first").value);
+var b=Number(document.getElementById("second").value);
+    var f;
+    f= a * b;
+    document.getElementById("answer4").value= f;
+                }
+function rest(){
+    var a=Number(document.getElementById("first").value);
+var b=Number(document.getElementById("second").value);
+    var g;
+    g= a % b;
+    document.getElementById("answer5").value= g;
+}
+    </script>
+</head>
+<body>
+<p>Enter the First number : <input id="first"></p>
+<p>Enter the Second number: <input id="second"></p>
+<p><button onclick="sum()">Sum:</button><input id="answer1"></p>
+<p><button onclick="dif()">Dif</button><input id="answer2"></p>
+<p><button onclick="div()">Div</button><input id="answer3"></p>
+<p><button onclick="mult()">Mult</button><input id="answer4"></p>
+<p><button onclick="rest()">Rest</button><input id="answer5"></p>
+</body>
+</html>
